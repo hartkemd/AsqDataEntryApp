@@ -37,16 +37,21 @@
             this.maleRadioButton = new System.Windows.Forms.RadioButton();
             this.femaleRadioButton = new System.Windows.Forms.RadioButton();
             this.scoresGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.personalSocialLabel = new System.Windows.Forms.Label();
-            this.problemSolvingTextBox = new System.Windows.Forms.TextBox();
-            this.problemSolvingLabel = new System.Windows.Forms.Label();
+            this.persSocRecComboBox = new System.Windows.Forms.ComboBox();
+            this.probSolvRecComboBox = new System.Windows.Forms.ComboBox();
+            this.fineMotorRecComboBox = new System.Windows.Forms.ComboBox();
+            this.grossMotorRecComboBox = new System.Windows.Forms.ComboBox();
+            this.commRecComboBox = new System.Windows.Forms.ComboBox();
+            this.persSocTextBox = new System.Windows.Forms.TextBox();
+            this.persSocLabel = new System.Windows.Forms.Label();
+            this.probSolvTextBox = new System.Windows.Forms.TextBox();
+            this.probSolvLabel = new System.Windows.Forms.Label();
             this.fineMotorTextBox = new System.Windows.Forms.TextBox();
             this.fineMotorLabel = new System.Windows.Forms.Label();
             this.grossMotorTextBox = new System.Windows.Forms.TextBox();
             this.grossMotorLabel = new System.Windows.Forms.Label();
-            this.communicationTextBox = new System.Windows.Forms.TextBox();
-            this.communicationLabel = new System.Windows.Forms.Label();
+            this.commTextBox = new System.Windows.Forms.TextBox();
+            this.commLabel = new System.Windows.Forms.Label();
             this.submitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.genderGroupBox = new System.Windows.Forms.GroupBox();
@@ -129,61 +134,111 @@
             // 
             // scoresGroupBox
             // 
-            this.scoresGroupBox.Controls.Add(this.textBox4);
-            this.scoresGroupBox.Controls.Add(this.personalSocialLabel);
-            this.scoresGroupBox.Controls.Add(this.problemSolvingTextBox);
-            this.scoresGroupBox.Controls.Add(this.problemSolvingLabel);
+            this.scoresGroupBox.Controls.Add(this.persSocRecComboBox);
+            this.scoresGroupBox.Controls.Add(this.probSolvRecComboBox);
+            this.scoresGroupBox.Controls.Add(this.fineMotorRecComboBox);
+            this.scoresGroupBox.Controls.Add(this.grossMotorRecComboBox);
+            this.scoresGroupBox.Controls.Add(this.commRecComboBox);
+            this.scoresGroupBox.Controls.Add(this.persSocTextBox);
+            this.scoresGroupBox.Controls.Add(this.persSocLabel);
+            this.scoresGroupBox.Controls.Add(this.probSolvTextBox);
+            this.scoresGroupBox.Controls.Add(this.probSolvLabel);
             this.scoresGroupBox.Controls.Add(this.fineMotorTextBox);
             this.scoresGroupBox.Controls.Add(this.fineMotorLabel);
             this.scoresGroupBox.Controls.Add(this.grossMotorTextBox);
             this.scoresGroupBox.Controls.Add(this.grossMotorLabel);
-            this.scoresGroupBox.Controls.Add(this.communicationTextBox);
-            this.scoresGroupBox.Controls.Add(this.communicationLabel);
+            this.scoresGroupBox.Controls.Add(this.commTextBox);
+            this.scoresGroupBox.Controls.Add(this.commLabel);
             this.scoresGroupBox.Location = new System.Drawing.Point(386, 25);
             this.scoresGroupBox.Name = "scoresGroupBox";
-            this.scoresGroupBox.Size = new System.Drawing.Size(240, 219);
+            this.scoresGroupBox.Size = new System.Drawing.Size(478, 219);
             this.scoresGroupBox.TabIndex = 5;
             this.scoresGroupBox.TabStop = false;
             this.scoresGroupBox.Text = "Total Scores:";
             // 
-            // textBox4
+            // persSocRecComboBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(159, 169);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 29);
-            this.textBox4.TabIndex = 5;
+            this.persSocRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.persSocRecComboBox.FormattingEnabled = true;
+            this.persSocRecComboBox.Location = new System.Drawing.Point(216, 169);
+            this.persSocRecComboBox.Name = "persSocRecComboBox";
+            this.persSocRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.persSocRecComboBox.TabIndex = 10;
             // 
-            // personalSocialLabel
+            // probSolvRecComboBox
             // 
-            this.personalSocialLabel.AutoSize = true;
-            this.personalSocialLabel.Location = new System.Drawing.Point(34, 172);
-            this.personalSocialLabel.Name = "personalSocialLabel";
-            this.personalSocialLabel.Size = new System.Drawing.Size(119, 21);
-            this.personalSocialLabel.TabIndex = 0;
-            this.personalSocialLabel.Text = "Personal-Social:";
+            this.probSolvRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.probSolvRecComboBox.FormattingEnabled = true;
+            this.probSolvRecComboBox.Location = new System.Drawing.Point(216, 134);
+            this.probSolvRecComboBox.Name = "probSolvRecComboBox";
+            this.probSolvRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.probSolvRecComboBox.TabIndex = 8;
             // 
-            // problemSolvingTextBox
+            // fineMotorRecComboBox
             // 
-            this.problemSolvingTextBox.Location = new System.Drawing.Point(159, 134);
-            this.problemSolvingTextBox.Name = "problemSolvingTextBox";
-            this.problemSolvingTextBox.Size = new System.Drawing.Size(51, 29);
-            this.problemSolvingTextBox.TabIndex = 4;
+            this.fineMotorRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fineMotorRecComboBox.FormattingEnabled = true;
+            this.fineMotorRecComboBox.Location = new System.Drawing.Point(216, 99);
+            this.fineMotorRecComboBox.Name = "fineMotorRecComboBox";
+            this.fineMotorRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.fineMotorRecComboBox.TabIndex = 6;
             // 
-            // problemSolvingLabel
+            // grossMotorRecComboBox
             // 
-            this.problemSolvingLabel.AutoSize = true;
-            this.problemSolvingLabel.Location = new System.Drawing.Point(25, 137);
-            this.problemSolvingLabel.Name = "problemSolvingLabel";
-            this.problemSolvingLabel.Size = new System.Drawing.Size(128, 21);
-            this.problemSolvingLabel.TabIndex = 0;
-            this.problemSolvingLabel.Text = "Problem Solving:";
+            this.grossMotorRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.grossMotorRecComboBox.FormattingEnabled = true;
+            this.grossMotorRecComboBox.Location = new System.Drawing.Point(216, 64);
+            this.grossMotorRecComboBox.Name = "grossMotorRecComboBox";
+            this.grossMotorRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.grossMotorRecComboBox.TabIndex = 4;
+            // 
+            // commRecComboBox
+            // 
+            this.commRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.commRecComboBox.FormattingEnabled = true;
+            this.commRecComboBox.Location = new System.Drawing.Point(216, 29);
+            this.commRecComboBox.Name = "commRecComboBox";
+            this.commRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.commRecComboBox.TabIndex = 2;
+            // 
+            // persSocTextBox
+            // 
+            this.persSocTextBox.Location = new System.Drawing.Point(159, 169);
+            this.persSocTextBox.Name = "persSocTextBox";
+            this.persSocTextBox.Size = new System.Drawing.Size(51, 29);
+            this.persSocTextBox.TabIndex = 9;
+            // 
+            // persSocLabel
+            // 
+            this.persSocLabel.AutoSize = true;
+            this.persSocLabel.Location = new System.Drawing.Point(34, 172);
+            this.persSocLabel.Name = "persSocLabel";
+            this.persSocLabel.Size = new System.Drawing.Size(119, 21);
+            this.persSocLabel.TabIndex = 0;
+            this.persSocLabel.Text = "Personal-Social:";
+            // 
+            // probSolvTextBox
+            // 
+            this.probSolvTextBox.Location = new System.Drawing.Point(159, 134);
+            this.probSolvTextBox.Name = "probSolvTextBox";
+            this.probSolvTextBox.Size = new System.Drawing.Size(51, 29);
+            this.probSolvTextBox.TabIndex = 7;
+            // 
+            // probSolvLabel
+            // 
+            this.probSolvLabel.AutoSize = true;
+            this.probSolvLabel.Location = new System.Drawing.Point(25, 137);
+            this.probSolvLabel.Name = "probSolvLabel";
+            this.probSolvLabel.Size = new System.Drawing.Size(128, 21);
+            this.probSolvLabel.TabIndex = 0;
+            this.probSolvLabel.Text = "Problem Solving:";
             // 
             // fineMotorTextBox
             // 
             this.fineMotorTextBox.Location = new System.Drawing.Point(159, 99);
             this.fineMotorTextBox.Name = "fineMotorTextBox";
             this.fineMotorTextBox.Size = new System.Drawing.Size(51, 29);
-            this.fineMotorTextBox.TabIndex = 3;
+            this.fineMotorTextBox.TabIndex = 5;
             // 
             // fineMotorLabel
             // 
@@ -199,7 +254,7 @@
             this.grossMotorTextBox.Location = new System.Drawing.Point(159, 64);
             this.grossMotorTextBox.Name = "grossMotorTextBox";
             this.grossMotorTextBox.Size = new System.Drawing.Size(51, 29);
-            this.grossMotorTextBox.TabIndex = 2;
+            this.grossMotorTextBox.TabIndex = 3;
             // 
             // grossMotorLabel
             // 
@@ -210,40 +265,42 @@
             this.grossMotorLabel.TabIndex = 0;
             this.grossMotorLabel.Text = "Gross Motor:";
             // 
-            // communicationTextBox
+            // commTextBox
             // 
-            this.communicationTextBox.Location = new System.Drawing.Point(159, 29);
-            this.communicationTextBox.Name = "communicationTextBox";
-            this.communicationTextBox.Size = new System.Drawing.Size(51, 29);
-            this.communicationTextBox.TabIndex = 1;
+            this.commTextBox.Location = new System.Drawing.Point(159, 29);
+            this.commTextBox.Name = "commTextBox";
+            this.commTextBox.Size = new System.Drawing.Size(51, 29);
+            this.commTextBox.TabIndex = 1;
             // 
-            // communicationLabel
+            // commLabel
             // 
-            this.communicationLabel.AutoSize = true;
-            this.communicationLabel.Location = new System.Drawing.Point(29, 32);
-            this.communicationLabel.Name = "communicationLabel";
-            this.communicationLabel.Size = new System.Drawing.Size(124, 21);
-            this.communicationLabel.TabIndex = 0;
-            this.communicationLabel.Text = "Communication:";
+            this.commLabel.AutoSize = true;
+            this.commLabel.Location = new System.Drawing.Point(29, 32);
+            this.commLabel.Name = "commLabel";
+            this.commLabel.Size = new System.Drawing.Size(124, 21);
+            this.commLabel.TabIndex = 0;
+            this.commLabel.Text = "Communication:";
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(226, 272);
+            this.submitButton.Location = new System.Drawing.Point(349, 277);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(97, 42);
             this.submitButton.TabIndex = 6;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(342, 272);
+            this.clearButton.Location = new System.Drawing.Point(465, 277);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(97, 42);
             this.clearButton.TabIndex = 0;
             this.clearButton.TabStop = false;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // genderGroupBox
             // 
@@ -268,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 353);
+            this.ClientSize = new System.Drawing.Size(911, 353);
             this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.genderGroupBox);
             this.Controls.Add(this.clearButton);
@@ -303,19 +360,24 @@
         private RadioButton maleRadioButton;
         private RadioButton femaleRadioButton;
         private GroupBox scoresGroupBox;
-        private TextBox textBox4;
-        private Label personalSocialLabel;
-        private TextBox problemSolvingTextBox;
-        private Label problemSolvingLabel;
+        private TextBox persSocTextBox;
+        private Label persSocLabel;
+        private TextBox probSolvTextBox;
+        private Label probSolvLabel;
         private TextBox fineMotorTextBox;
         private Label fineMotorLabel;
         private TextBox grossMotorTextBox;
         private Label grossMotorLabel;
-        private TextBox communicationTextBox;
-        private Label communicationLabel;
+        private TextBox commTextBox;
+        private Label commLabel;
         private Button submitButton;
         private Button clearButton;
         private GroupBox genderGroupBox;
         private Label genderLabel;
+        private ComboBox commRecComboBox;
+        private ComboBox persSocRecComboBox;
+        private ComboBox probSolvRecComboBox;
+        private ComboBox fineMotorRecComboBox;
+        private ComboBox grossMotorRecComboBox;
     }
 }
