@@ -56,6 +56,7 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.genderGroupBox = new System.Windows.Forms.GroupBox();
             this.genderLabel = new System.Windows.Forms.Label();
+            this.recLabel = new System.Windows.Forms.Label();
             this.scoresGroupBox.SuspendLayout();
             this.genderGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -134,6 +135,7 @@
             // 
             // scoresGroupBox
             // 
+            this.scoresGroupBox.Controls.Add(this.recLabel);
             this.scoresGroupBox.Controls.Add(this.persSocRecComboBox);
             this.scoresGroupBox.Controls.Add(this.probSolvRecComboBox);
             this.scoresGroupBox.Controls.Add(this.fineMotorRecComboBox);
@@ -151,7 +153,7 @@
             this.scoresGroupBox.Controls.Add(this.commLabel);
             this.scoresGroupBox.Location = new System.Drawing.Point(386, 25);
             this.scoresGroupBox.Name = "scoresGroupBox";
-            this.scoresGroupBox.Size = new System.Drawing.Size(478, 219);
+            this.scoresGroupBox.Size = new System.Drawing.Size(442, 306);
             this.scoresGroupBox.TabIndex = 5;
             this.scoresGroupBox.TabStop = false;
             this.scoresGroupBox.Text = "Total Scores:";
@@ -160,50 +162,50 @@
             // 
             this.persSocRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.persSocRecComboBox.FormattingEnabled = true;
-            this.persSocRecComboBox.Location = new System.Drawing.Point(216, 169);
+            this.persSocRecComboBox.Location = new System.Drawing.Point(221, 252);
             this.persSocRecComboBox.Name = "persSocRecComboBox";
-            this.persSocRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.persSocRecComboBox.Size = new System.Drawing.Size(65, 29);
             this.persSocRecComboBox.TabIndex = 10;
             // 
             // probSolvRecComboBox
             // 
             this.probSolvRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.probSolvRecComboBox.FormattingEnabled = true;
-            this.probSolvRecComboBox.Location = new System.Drawing.Point(216, 134);
+            this.probSolvRecComboBox.Location = new System.Drawing.Point(221, 217);
             this.probSolvRecComboBox.Name = "probSolvRecComboBox";
-            this.probSolvRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.probSolvRecComboBox.Size = new System.Drawing.Size(65, 29);
             this.probSolvRecComboBox.TabIndex = 8;
             // 
             // fineMotorRecComboBox
             // 
             this.fineMotorRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fineMotorRecComboBox.FormattingEnabled = true;
-            this.fineMotorRecComboBox.Location = new System.Drawing.Point(216, 99);
+            this.fineMotorRecComboBox.Location = new System.Drawing.Point(221, 182);
             this.fineMotorRecComboBox.Name = "fineMotorRecComboBox";
-            this.fineMotorRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.fineMotorRecComboBox.Size = new System.Drawing.Size(65, 29);
             this.fineMotorRecComboBox.TabIndex = 6;
             // 
             // grossMotorRecComboBox
             // 
             this.grossMotorRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.grossMotorRecComboBox.FormattingEnabled = true;
-            this.grossMotorRecComboBox.Location = new System.Drawing.Point(216, 64);
+            this.grossMotorRecComboBox.Location = new System.Drawing.Point(221, 147);
             this.grossMotorRecComboBox.Name = "grossMotorRecComboBox";
-            this.grossMotorRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.grossMotorRecComboBox.Size = new System.Drawing.Size(65, 29);
             this.grossMotorRecComboBox.TabIndex = 4;
             // 
             // commRecComboBox
             // 
             this.commRecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.commRecComboBox.FormattingEnabled = true;
-            this.commRecComboBox.Location = new System.Drawing.Point(216, 29);
+            this.commRecComboBox.Location = new System.Drawing.Point(221, 112);
             this.commRecComboBox.Name = "commRecComboBox";
-            this.commRecComboBox.Size = new System.Drawing.Size(224, 29);
+            this.commRecComboBox.Size = new System.Drawing.Size(65, 29);
             this.commRecComboBox.TabIndex = 2;
             // 
             // persSocTextBox
             // 
-            this.persSocTextBox.Location = new System.Drawing.Point(159, 169);
+            this.persSocTextBox.Location = new System.Drawing.Point(164, 252);
             this.persSocTextBox.Name = "persSocTextBox";
             this.persSocTextBox.Size = new System.Drawing.Size(51, 29);
             this.persSocTextBox.TabIndex = 9;
@@ -211,7 +213,7 @@
             // persSocLabel
             // 
             this.persSocLabel.AutoSize = true;
-            this.persSocLabel.Location = new System.Drawing.Point(34, 172);
+            this.persSocLabel.Location = new System.Drawing.Point(39, 255);
             this.persSocLabel.Name = "persSocLabel";
             this.persSocLabel.Size = new System.Drawing.Size(119, 21);
             this.persSocLabel.TabIndex = 0;
@@ -219,7 +221,7 @@
             // 
             // probSolvTextBox
             // 
-            this.probSolvTextBox.Location = new System.Drawing.Point(159, 134);
+            this.probSolvTextBox.Location = new System.Drawing.Point(164, 217);
             this.probSolvTextBox.Name = "probSolvTextBox";
             this.probSolvTextBox.Size = new System.Drawing.Size(51, 29);
             this.probSolvTextBox.TabIndex = 7;
@@ -227,7 +229,7 @@
             // probSolvLabel
             // 
             this.probSolvLabel.AutoSize = true;
-            this.probSolvLabel.Location = new System.Drawing.Point(25, 137);
+            this.probSolvLabel.Location = new System.Drawing.Point(30, 220);
             this.probSolvLabel.Name = "probSolvLabel";
             this.probSolvLabel.Size = new System.Drawing.Size(128, 21);
             this.probSolvLabel.TabIndex = 0;
@@ -235,7 +237,7 @@
             // 
             // fineMotorTextBox
             // 
-            this.fineMotorTextBox.Location = new System.Drawing.Point(159, 99);
+            this.fineMotorTextBox.Location = new System.Drawing.Point(164, 182);
             this.fineMotorTextBox.Name = "fineMotorTextBox";
             this.fineMotorTextBox.Size = new System.Drawing.Size(51, 29);
             this.fineMotorTextBox.TabIndex = 5;
@@ -243,7 +245,7 @@
             // fineMotorLabel
             // 
             this.fineMotorLabel.AutoSize = true;
-            this.fineMotorLabel.Location = new System.Drawing.Point(64, 102);
+            this.fineMotorLabel.Location = new System.Drawing.Point(69, 185);
             this.fineMotorLabel.Name = "fineMotorLabel";
             this.fineMotorLabel.Size = new System.Drawing.Size(89, 21);
             this.fineMotorLabel.TabIndex = 0;
@@ -251,7 +253,7 @@
             // 
             // grossMotorTextBox
             // 
-            this.grossMotorTextBox.Location = new System.Drawing.Point(159, 64);
+            this.grossMotorTextBox.Location = new System.Drawing.Point(164, 147);
             this.grossMotorTextBox.Name = "grossMotorTextBox";
             this.grossMotorTextBox.Size = new System.Drawing.Size(51, 29);
             this.grossMotorTextBox.TabIndex = 3;
@@ -259,7 +261,7 @@
             // grossMotorLabel
             // 
             this.grossMotorLabel.AutoSize = true;
-            this.grossMotorLabel.Location = new System.Drawing.Point(53, 67);
+            this.grossMotorLabel.Location = new System.Drawing.Point(58, 150);
             this.grossMotorLabel.Name = "grossMotorLabel";
             this.grossMotorLabel.Size = new System.Drawing.Size(100, 21);
             this.grossMotorLabel.TabIndex = 0;
@@ -267,7 +269,7 @@
             // 
             // commTextBox
             // 
-            this.commTextBox.Location = new System.Drawing.Point(159, 29);
+            this.commTextBox.Location = new System.Drawing.Point(164, 112);
             this.commTextBox.Name = "commTextBox";
             this.commTextBox.Size = new System.Drawing.Size(51, 29);
             this.commTextBox.TabIndex = 1;
@@ -275,7 +277,7 @@
             // commLabel
             // 
             this.commLabel.AutoSize = true;
-            this.commLabel.Location = new System.Drawing.Point(29, 32);
+            this.commLabel.Location = new System.Drawing.Point(34, 115);
             this.commLabel.Name = "commLabel";
             this.commLabel.Size = new System.Drawing.Size(124, 21);
             this.commLabel.TabIndex = 0;
@@ -283,7 +285,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(349, 277);
+            this.submitButton.Location = new System.Drawing.Point(328, 359);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(97, 42);
             this.submitButton.TabIndex = 6;
@@ -293,7 +295,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(465, 277);
+            this.clearButton.Location = new System.Drawing.Point(444, 359);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(97, 42);
             this.clearButton.TabIndex = 0;
@@ -321,11 +323,21 @@
             this.genderLabel.TabIndex = 0;
             this.genderLabel.Text = "Gender:";
             // 
+            // recLabel
+            // 
+            this.recLabel.AutoSize = true;
+            this.recLabel.Location = new System.Drawing.Point(221, 25);
+            this.recLabel.MaximumSize = new System.Drawing.Size(225, 0);
+            this.recLabel.Name = "recLabel";
+            this.recLabel.Size = new System.Drawing.Size(207, 84);
+            this.recLabel.TabIndex = 11;
+            this.recLabel.Text = "Recommendation\r\n3 = normal\r\n2 = monitor\r\n1 = professional assessment";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 353);
+            this.ClientSize = new System.Drawing.Size(863, 427);
             this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.genderGroupBox);
             this.Controls.Add(this.clearButton);
@@ -379,5 +391,6 @@
         private ComboBox probSolvRecComboBox;
         private ComboBox fineMotorRecComboBox;
         private ComboBox grossMotorRecComboBox;
+        private Label recLabel;
     }
 }

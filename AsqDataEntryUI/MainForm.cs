@@ -1,10 +1,12 @@
+using AsqLibrary;
 using System.ComponentModel;
 
 namespace AsqDataEntryUI
 {
     public partial class MainForm : Form
     {
-        private List<string> recommendations = new List<string>() { "", "0. normal", "1. monitor", "2. professional assessment" };
+        private List<string> recommendations = new List<string>() { "", "3", "2", "1" };
+        private ExcelHelper excelHelper = new ExcelHelper();
 
         public MainForm()
         {
@@ -123,7 +125,30 @@ namespace AsqDataEntryUI
 
             if (inputIsValid == true)
             {
-                MessageBox.Show("Validation succeeded!");
+                AsqModel asqModel = new AsqModel();
+                asqModel.Id = idTextBox.Text;
+                asqModel.DateAsqCompleted = dateAsqCompletedDateTimePicker.Value;
+                asqModel.DateOfBirth = dateOfBirthDateTimePicker.Value;
+                if (maleRadioButton.Checked == true)
+                {
+                    asqModel.Gender = "M";
+                }
+                else if (femaleRadioButton.Checked == true)
+                {
+                    asqModel.Gender = "F";
+                }
+                asqModel.CommunicationScore = commTextBox.Text;
+                asqModel.CommunicationRecommendation = commRecComboBox.SelectedItem.ToString();
+                asqModel.GrossMotorScore = grossMotorTextBox.Text;
+                asqModel.GrossMotorRecommendation = grossMotorRecComboBox.SelectedItem.ToString();
+                asqModel.FineMotorScore = fineMotorTextBox.Text;
+                asqModel.FineMotorRecommendation = fineMotorRecComboBox.SelectedItem.ToString();
+                asqModel.ProblemSolvingScore = probSolvTextBox.Text;
+                asqModel.ProblemSolvingRecommendation = probSolvRecComboBox.SelectedItem.ToString();
+                asqModel.PersonalSocialScore = persSocTextBox.Text;
+                asqModel.PersonalSocialRecommendation = persSocRecComboBox.SelectedItem.ToString();
+                
+                excelHelper.AddRow(asqModel);
             }
             else
             {
