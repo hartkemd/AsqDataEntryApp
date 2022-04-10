@@ -393,7 +393,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
-            this.Text = "ASQ Data Entry";
+            this.Text = "ASQ Data Entry - 1.0.0";
             this.scoresGroupBox.ResumeLayout(false);
             this.scoresGroupBox.PerformLayout();
             this.genderGroupBox.ResumeLayout(false);
