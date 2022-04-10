@@ -37,6 +37,7 @@
             this.maleRadioButton = new System.Windows.Forms.RadioButton();
             this.femaleRadioButton = new System.Windows.Forms.RadioButton();
             this.scoresGroupBox = new System.Windows.Forms.GroupBox();
+            this.recLabel = new System.Windows.Forms.Label();
             this.persSocRecComboBox = new System.Windows.Forms.ComboBox();
             this.probSolvRecComboBox = new System.Windows.Forms.ComboBox();
             this.fineMotorRecComboBox = new System.Windows.Forms.ComboBox();
@@ -56,15 +57,19 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.genderGroupBox = new System.Windows.Forms.GroupBox();
             this.genderLabel = new System.Windows.Forms.Label();
-            this.recLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectExcelFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusLabel = new System.Windows.Forms.Label();
             this.scoresGroupBox.SuspendLayout();
             this.genderGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(160, 28);
+            this.idLabel.Location = new System.Drawing.Point(161, 50);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(28, 21);
             this.idLabel.TabIndex = 0;
@@ -72,7 +77,7 @@
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(194, 25);
+            this.idTextBox.Location = new System.Drawing.Point(195, 47);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(75, 29);
             this.idTextBox.TabIndex = 1;
@@ -80,7 +85,7 @@
             // dateAsqCompletedLabel
             // 
             this.dateAsqCompletedLabel.AutoSize = true;
-            this.dateAsqCompletedLabel.Location = new System.Drawing.Point(31, 66);
+            this.dateAsqCompletedLabel.Location = new System.Drawing.Point(32, 88);
             this.dateAsqCompletedLabel.Name = "dateAsqCompletedLabel";
             this.dateAsqCompletedLabel.Size = new System.Drawing.Size(157, 21);
             this.dateAsqCompletedLabel.TabIndex = 0;
@@ -88,7 +93,7 @@
             // 
             // dateAsqCompletedDateTimePicker
             // 
-            this.dateAsqCompletedDateTimePicker.Location = new System.Drawing.Point(194, 60);
+            this.dateAsqCompletedDateTimePicker.Location = new System.Drawing.Point(195, 82);
             this.dateAsqCompletedDateTimePicker.Name = "dateAsqCompletedDateTimePicker";
             this.dateAsqCompletedDateTimePicker.Size = new System.Drawing.Size(155, 29);
             this.dateAsqCompletedDateTimePicker.TabIndex = 2;
@@ -96,7 +101,7 @@
             // 
             // dateOfBirthDateTimePicker
             // 
-            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(194, 95);
+            this.dateOfBirthDateTimePicker.Location = new System.Drawing.Point(195, 117);
             this.dateOfBirthDateTimePicker.Name = "dateOfBirthDateTimePicker";
             this.dateOfBirthDateTimePicker.Size = new System.Drawing.Size(155, 29);
             this.dateOfBirthDateTimePicker.TabIndex = 3;
@@ -105,7 +110,7 @@
             // dateOfBirthLabel
             // 
             this.dateOfBirthLabel.AutoSize = true;
-            this.dateOfBirthLabel.Location = new System.Drawing.Point(88, 101);
+            this.dateOfBirthLabel.Location = new System.Drawing.Point(89, 123);
             this.dateOfBirthLabel.Name = "dateOfBirthLabel";
             this.dateOfBirthLabel.Size = new System.Drawing.Size(100, 21);
             this.dateOfBirthLabel.TabIndex = 0;
@@ -151,12 +156,22 @@
             this.scoresGroupBox.Controls.Add(this.grossMotorLabel);
             this.scoresGroupBox.Controls.Add(this.commTextBox);
             this.scoresGroupBox.Controls.Add(this.commLabel);
-            this.scoresGroupBox.Location = new System.Drawing.Point(386, 25);
+            this.scoresGroupBox.Location = new System.Drawing.Point(387, 47);
             this.scoresGroupBox.Name = "scoresGroupBox";
             this.scoresGroupBox.Size = new System.Drawing.Size(442, 306);
             this.scoresGroupBox.TabIndex = 5;
             this.scoresGroupBox.TabStop = false;
             this.scoresGroupBox.Text = "Total Scores:";
+            // 
+            // recLabel
+            // 
+            this.recLabel.AutoSize = true;
+            this.recLabel.Location = new System.Drawing.Point(221, 25);
+            this.recLabel.MaximumSize = new System.Drawing.Size(225, 0);
+            this.recLabel.Name = "recLabel";
+            this.recLabel.Size = new System.Drawing.Size(207, 84);
+            this.recLabel.TabIndex = 11;
+            this.recLabel.Text = "Recommendation\r\n3 = normal\r\n2 = monitor\r\n1 = professional assessment";
             // 
             // persSocRecComboBox
             // 
@@ -285,7 +300,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(328, 359);
+            this.submitButton.Location = new System.Drawing.Point(329, 381);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(97, 42);
             this.submitButton.TabIndex = 6;
@@ -295,7 +310,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(444, 359);
+            this.clearButton.Location = new System.Drawing.Point(445, 381);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(97, 42);
             this.clearButton.TabIndex = 0;
@@ -308,7 +323,7 @@
             // 
             this.genderGroupBox.Controls.Add(this.maleRadioButton);
             this.genderGroupBox.Controls.Add(this.femaleRadioButton);
-            this.genderGroupBox.Location = new System.Drawing.Point(194, 130);
+            this.genderGroupBox.Location = new System.Drawing.Point(195, 152);
             this.genderGroupBox.Name = "genderGroupBox";
             this.genderGroupBox.Size = new System.Drawing.Size(155, 58);
             this.genderGroupBox.TabIndex = 4;
@@ -317,27 +332,51 @@
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
-            this.genderLabel.Location = new System.Drawing.Point(124, 153);
+            this.genderLabel.Location = new System.Drawing.Point(125, 175);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(64, 21);
             this.genderLabel.TabIndex = 0;
             this.genderLabel.Text = "Gender:";
             // 
-            // recLabel
+            // menuStrip1
             // 
-            this.recLabel.AutoSize = true;
-            this.recLabel.Location = new System.Drawing.Point(221, 25);
-            this.recLabel.MaximumSize = new System.Drawing.Size(225, 0);
-            this.recLabel.Name = "recLabel";
-            this.recLabel.Size = new System.Drawing.Size(207, 84);
-            this.recLabel.TabIndex = 11;
-            this.recLabel.Text = "Recommendation\r\n3 = normal\r\n2 = monitor\r\n1 = professional assessment";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(863, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectExcelFileToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // selectExcelFileToolStripMenuItem
+            // 
+            this.selectExcelFileToolStripMenuItem.Name = "selectExcelFileToolStripMenuItem";
+            this.selectExcelFileToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.selectExcelFileToolStripMenuItem.Text = "Select Excel File";
+            this.selectExcelFileToolStripMenuItem.Click += new System.EventHandler(this.SelectExcelFileToolStripMenuItem_Click);
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Location = new System.Drawing.Point(12, 445);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 21);
+            this.statusLabel.TabIndex = 8;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 427);
+            this.ClientSize = new System.Drawing.Size(863, 475);
+            this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.genderGroupBox);
             this.Controls.Add(this.clearButton);
@@ -349,7 +388,9 @@
             this.Controls.Add(this.dateAsqCompletedLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "ASQ Data Entry";
@@ -357,6 +398,8 @@
             this.scoresGroupBox.PerformLayout();
             this.genderGroupBox.ResumeLayout(false);
             this.genderGroupBox.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,5 +435,9 @@
         private ComboBox fineMotorRecComboBox;
         private ComboBox grossMotorRecComboBox;
         private Label recLabel;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem selectExcelFileToolStripMenuItem;
+        private Label statusLabel;
     }
 }

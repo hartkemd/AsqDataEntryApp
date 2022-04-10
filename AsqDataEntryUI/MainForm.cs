@@ -5,8 +5,9 @@ namespace AsqDataEntryUI
 {
     public partial class MainForm : Form
     {
-        private List<string> recommendations = new List<string>() { "", "3", "2", "1" };
-        private ExcelHelper excelHelper = new ExcelHelper();
+        private static string classLevelFilePath;
+        private static List<string> recommendations = new List<string>() { "", "3", "2", "1" };
+        private static ExcelHelper excelHelper = new ExcelHelper();
 
         public MainForm()
         {
@@ -17,6 +18,19 @@ namespace AsqDataEntryUI
 
             AutoValidate = AutoValidate.Disable;
             AddValidatingEvents();
+
+            SetFilePath();
+        }
+
+        private static void SetFilePath()
+        {
+            classLevelFilePath = FileIO.ReadFilePathFromConfigFile();
+            excelHelper.FilePath = classLevelFilePath;
+
+            if (classLevelFilePath == string.Empty)
+            {
+                MessageBox.Show("Excel file path must be selected from File menu.", "Excel File Path Missing", MessageBoxButtons.OK);
+            }
         }
 
         private void AddValidatingEvents()
@@ -98,7 +112,7 @@ namespace AsqDataEntryUI
             }
         }
 
-        private void ClearButton_Click(object sender, EventArgs e)
+        private void ClearForm()
         {
             idTextBox.Clear();
             dateAsqCompletedDateTimePicker.Value = DateTime.Today;
@@ -119,7 +133,12 @@ namespace AsqDataEntryUI
             idTextBox.Focus();
         }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+        }
+
+        private async void SubmitButton_Click(object sender, EventArgs e)
         {
             bool inputIsValid = ValidateInput();
 
@@ -149,10 +168,32 @@ namespace AsqDataEntryUI
                 asqModel.PersonalSocialRecommendation = persSocRecComboBox.SelectedItem.ToString();
                 
                 excelHelper.AddRow(asqModel);
+                statusLabel.Text = "Row added!";
+                ClearForm();
+                await Task.Delay(5000);
+                statusLabel.Text = "";
             }
             else
             {
                 MessageBox.Show("Validation failed.");
+            }
+        }
+
+        private void SelectExcelFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "xlsx files (*.xlsx)|*.xlsx|all files (*.*)|*.*";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    filePath = openFileDialog.FileName;
+                    classLevelFilePath = filePath;
+                    FileIO.WriteFilePathToConfigFile(filePath);
+                    MessageBox.Show($"The file path you selected is: {filePath}", "File Path", MessageBoxButtons.OK);
+                }
             }
         }
     }
