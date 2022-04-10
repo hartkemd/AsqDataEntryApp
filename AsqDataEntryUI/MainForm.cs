@@ -170,7 +170,7 @@ namespace AsqDataEntryUI
                 excelHelper.AddRow(asqModel);
                 statusLabel.Text = "Row added!";
                 ClearForm();
-                await Task.Delay(5000);
+                await Task.Delay(4000);
                 statusLabel.Text = "";
             }
             else
